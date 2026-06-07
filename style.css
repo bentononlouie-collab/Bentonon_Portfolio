@@ -65,7 +65,7 @@ body{
 }
 
 h1{
-    font-size: clamp(25px, 8vw, 70px);
+    font-size: 35px;
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-bottom: 15px;
@@ -273,8 +273,9 @@ html{
 
 .Certificates h1{
     font-size: clamp(35px, 8vw, 70px);
-    color: #d8b44a;
-    margin-bottom: 10px;
+    color: white;
+    margin-bottom: 50px;
+    text-shadow: 0 0 20px white;
 }
 
 .Certificates p{
@@ -415,8 +416,10 @@ html{
 }
 
 .name{
-    white-space: nowrap;
-    font-size: 60px;
+    font-size: clamp(35px, 8vw, 70px);
+    color: white;
+    margin-bottom: 50px;
+    text-shadow: 0 0 20px white;
 }
 
 @keyframes glow{
