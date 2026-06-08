@@ -498,5 +498,8 @@ section{
     .cert-card img{
         animation: none;
     }
+    .proj-card img{
+        animation: none;
+    }
 }
 
