@@ -273,9 +273,9 @@ html{
 
 .Certificates h1{
     font-size: clamp(35px, 8vw, 70px);
-    color: white;
+    color: #d8b44a;
     margin-bottom: 50px;
-    text-shadow: 0 0 20px white;
+    text-shadow: 0 0 20px #d8b44a;
 }
 
 .Certificates p{
