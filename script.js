@@ -50,3 +50,15 @@ initStars();
 animateStars();
 
 window.addEventListener('resize', () =>{canvas.width = window.innerWidth; canvas.height = window.innerHeight; initStars();});
+window.addEventListener("scroll", () =>{const sections = document.querySelectorAll("section");
+        sections.forEach(section => { 
+            const sectionTop = section.getBoundingClientRect().top;
+            const screenHeight = window.innerHeight;
+                if(sectionTop < screenHeight - 100){
+                    section.style.opacity = "1";
+                    section.style.transform = "translateY(0)";
+                }
+    });
+});
+
+revealSections();
