@@ -462,19 +462,19 @@ section{
 
 @keyframes scrollCert{
     from{
-        top: 0;
+        transform: translateY(0%);
     }
     to{
-        top: -500px;
+        transform: translateY(-75%);
     }
 }
 
 @keyframes scrollCerts{
     from{
-        top: 0;
+        transform: translateY(0%);
     }
     to{
-        top: -350px;
+        transform: translateY(-70%);
     }
 }
 
