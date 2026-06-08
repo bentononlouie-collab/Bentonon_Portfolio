@@ -35,7 +35,7 @@ class Star{
 
 function initStars(){
     starsArray = [];
-        for(let i = 0; i<100; i++){
+        for(let i = 0; i<200; i++){
             starsArray.push(new Star());
         }
 }
