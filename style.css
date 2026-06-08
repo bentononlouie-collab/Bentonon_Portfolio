@@ -495,4 +495,8 @@ section{
         width: 90%;
         height: 180px;
     }
+    .cert-card img{
+        animation: none;
+    }
 }
+
