@@ -298,6 +298,8 @@ html{
     background: rgba(40, 0, 0, 0.8);
     box-shadow: 0 0 15px rgba(216, 180, 74, .4), 0 0 30px rgba(216, 180, 74, .2);
     position: relative;
+    overflow: hidden;
+    height: 100px;
 }
 
 .proj-card{
@@ -310,20 +312,26 @@ html{
     background: rgba(40, 0, 0, 0.8);
     box-shadow: 0 0 15px rgba(216, 180, 74, .4), 0 0 30px rgba(216, 180, 74, .2);
     position: relative;
+    overflow: hidden;
+    height: 100px;
 }
 
 .cert-card img{
     width: 100%;
-    height: 100px;
+    height: auto;
     display: block;
     object-fit:  cover;
+    animation : scrollCert 12s ease-in-out infinite alternate;
+    position: relative
 }
 
 .proj-card img{
     width: 100%;
-    height: 100px;
+    height: auto;
     display: block;
     object-fit:  cover;
+    animation : scrollCerts 12s ease-in-out infinite alternate;
+    position: relative
 }
 
 .year{
@@ -428,6 +436,10 @@ section{
     transition: all 0.8s ease;
 }
 
+.cert-card{
+
+}
+
 @keyframes glow{
     from{
         opacity: 0.5s;
@@ -448,6 +460,24 @@ section{
     }
 }
 
+@keyframes scrollCert{
+    from{
+        top: 0;
+    }
+    to{
+        top: -500px;
+    }
+}
+
+@keyframes scrollCerts{
+    from{
+        top: 0;
+    }
+    to{
+        top: -350px;
+    }
+}
+
 @media (max-width: 768px){
     h1{
         font-size: 45px;
@@ -457,5 +487,12 @@ section{
     }
     p{
         font-size: 16px;
+    }
+}
+
+@media (max-width: 768px){
+    .cert-card{
+        width: 90%;
+        height: 180px;
     }
 }
