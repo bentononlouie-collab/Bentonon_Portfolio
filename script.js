@@ -62,3 +62,12 @@ window.addEventListener("scroll", () =>{const sections = document.querySelectorA
 });
 
 revealSections();
+
+document.addEventListener("DOMContentLoaded", function (){
+    const icon = document.querySelector(".Prof-men");
+    const menu = document.querySelector(".mobile-menu");
+
+        icon.addEventListener("click", function () {
+            menu.classList.toggle("show");
+        });
+});

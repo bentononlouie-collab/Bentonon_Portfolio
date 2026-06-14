@@ -13,6 +13,340 @@ body{
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    background: rgba(17, 4, 157, 0.6);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Icon{
+    width: 70px;
+    height: 70px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.Icon img{
+    width: 150%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.Contact{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 42px;
+    right: 95px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.Contact:hover{
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+    background-color: rgba(128, 128, 128, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.Projects{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 42px;
+    right: 170px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.Projects:hover{
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+    background-color: rgba(128, 128, 128, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.Skills{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 42px;
+    right: 250px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.Skills:hover{
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+    background-color: rgba(128, 128, 128, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.Achievement{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 42px;
+    right: 310px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.Achievement:hover{
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+    background-color: rgba(128, 128, 128, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.About{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 42px;
+    right: 425px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.About:hover{
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+    background-color: rgba(128, 128, 128, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.home-icon{
+    position: fixed;
+    top: 38px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.home-icon img{
+    width: 35px;
+    height: 35px;
+    filter: brightness(0) invert(1);
+}
+
+.Int h3{
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 10px white, 0 0 20px white;
+    top: 150px;
+    left: 80px;
+    position: fixed;
+}
+
+.Fname{
+    color: white;
+    top: 250px;
+    left: 160px;
+    position: fixed;
+    text-shadow: 0 0 15px white, 0 0 30px white;
+    font-size: 80px;
+}
+
+.Sname{
+    color: white;
+    top: 340px;
+    left: 160px;
+    position: fixed;
+    text-shadow: 0 0 15px white, 0 0 30px white;
+    font-size: 80px;
+}
+
+.Course{
+    color: white;
+    top: 450px;
+    left: 120px;
+    position: fixed;
+    text-shadow: 0 0 15px white, 0 0 30px white;
+    font-size: 40px;
+}
+
+.Dec{
+    top: 500px;
+    left: 120px;
+    position: fixed;
+    color: white;
+    font-size: 20px;
+}
+
+.btn{
+    position: absolute;
+    bottom: 40px;
+    left: 150px;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: 14px 35px;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.4s ease;
+    box-shadow: 0 0 15px #00ff66;
+}
+
+.btn:hover{
+    background: white;
+    color: black;
+    box-shadow: 0 0 25px white;
+}
+
+.Picture img{
+    width: 500px;
+    height: 500px;
+    border-radius: 15%;
+    border: 4px solid #01f5ed;
+    box-shadow: 0 0 10px #01f5ed,
+                0 0 20px #01f5ed,
+                0 0 30px #01f5ed;
+    right: 50px;
+    position: fixed;
+    top: 150px;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+@media (max-width: 768px){
+
+    .Icon{
+        width: 50px;
+        height: 50px;
+        top: 15px;
+        right: 70px;
+    }
+
+    .Contact, .Projects, .Skills, .Achievement, .About{
+        display: none;
+    }
+
+    .home-icon{
+        top: 20px;
+        left: 20px;
+    }
+
+    .Fname{
+        font-size: 25px;
+        top: 150px;
+        left: 40px;
+    }
+
+    .Sname{
+        font-size: 25px;
+        top: 180px;
+        left: 40px;
+    }
+
+    .Picture img{
+        width: 300px;
+        height: 300px;
+        top: 220px;
+        left: 30px;
+    }
+
+    .Int h3{
+        font-size: 30px;
+        top: 100px;
+        left: 20px;
+    }
+
+    .Course{
+        font-size: 25px;
+        top: 550px;
+        left: 90px;
+    }
+    
+    .Dec{
+        font-size: 16px;
+        top: 580px;
+        left: 90px;
+        width: 180px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .btn{
+        top: 680px;
+        left: 100px;
+        width: 170px;
+        height: 70px;
+        text-align: center;
+    }
+
+    .container{
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-menu{
+        display: none;
+        position: fixed;
+        top: 15px;
+        right: 70px;
+        background: rgba(0,0,0,0.8);
+        padding: 15px;
+        border-radius: 10px;
+        z-index: 1000;
+    }
+
+    .mobile-menu.show{
+        display: block;
+    }
+
+    .mobile-menu a{
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    .Prof-men{
+        cursor: pointer;
+    }
+}
+
 #stars{
     position: fixed;
     width: 100%;
@@ -84,28 +418,6 @@ p{
     line-height: 1.8;
     color: #bfbfbf;
     margin-bottom: 20px;
-}
-
-.btn{
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: inline-block;
-    padding: 14px 35px;
-    border: 2px solid white;
-    border-radius: 30px;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    transition: 0.4s ease;
-    box-shadow: 0 0 15px #00ff66;
-}
-
-.btn:hover{
-    background: white;
-    color: black;
-    box-shadow: 0 0 25px white;
 }
 
 html{
