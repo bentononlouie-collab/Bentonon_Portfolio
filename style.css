@@ -894,6 +894,66 @@ html{
     right: 180px;
 }
 
+.Gmail{
+    width: 300px;
+    height: 300px;
+    border-radius: 15%;
+    box-shadow: 0 0 10px cyan,
+                0 0 20px cyan,
+                0 0 30px cyan;
+    position: fixed;
+    top: 250px;
+    right: 180px;
+    overflow: hidden;
+}
+
+.Gmail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 25px;
+}
+
+.Facebook{
+    width: 300px;
+    height: 300px;
+    border-radius: 15%;
+    box-shadow: 0 0 10px cyan,
+                0 0 20px cyan,
+                0 0 30px cyan;
+    position: fixed;
+    top: 250px;
+    left: 180px;
+}
+
+.Facebook img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 25px;
+}
+
+.Github{
+    width: 300px;
+    height: 300px;
+    border-radius: 15%;
+    box-shadow: 0 0 10px cyan,
+                0 0 20px cyan,
+                0 0 30px cyan;
+    position: fixed;
+    top: 250px;
+}
+
+.Github img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 25px;
+}
+
 @media (max-width: 768px){
 
     .Icon{
@@ -1390,9 +1450,8 @@ html{
 }
 
 section{
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.8s ease;
+    transform: translateY(1px);
+   
 }
 
 .cert-card{
