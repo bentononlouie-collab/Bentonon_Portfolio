@@ -781,6 +781,16 @@ html{
     text-shadow: 2px 2px 5px black ;
 }
 
+.TitleP{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    top: 40px;
+    position: fixed;
+    text-shadow: 2px 2px 5px white;
+}
+
 .MONI{
     width: 300px;
     height: 300px;
@@ -821,7 +831,7 @@ html{
     display: block;
 }
 
-.System1{
+.System2{
     font-size: 20px;
     text-align: center;
     font-weight: bold;
@@ -830,54 +840,6 @@ html{
                  0 0 30px white;
     margin-top: 350px;            
     margin-right: 825px;
-}
-
-.MEM1{
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 0 0 10px white,
-                 0 0 20px white,
-                 0 0 30px white;
-    position: fixed;
-    top: 600px;
-    left: 210px;
-}
-
-.LABEL1{
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 0 0 10px white,
-                 0 0 20px white,
-                 0 0 30px white;
-    position: fixed;
-    top: 570px;
-    left: 290px;
-}
-
-.LABEL2{
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 0 0 10px white,
-                 0 0 20px white,
-                 0 0 30px white;
-    position: fixed;
-    top: 570px;
-    right: 290px;
-}
-
-.System2{
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 0 0 10px white,
-                 0 0 20px white,
-                 0 0 30px white;
-    position: fixed;
-    top: 525px;
-    right: 225px;
 }
 
 .MEM2{
@@ -889,7 +851,65 @@ html{
                  0 0 30px white;
     position: fixed;
     top: 600px;
+    left: 210px;
+}
+
+.LABEL2{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 10px white,
+                 0 0 20px white,
+                 0 0 30px white;
+    position: fixed;
+    top: 570px;
+    left: 290px;
+}
+
+.LABEL1{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 10px white,
+                 0 0 20px white,
+                 0 0 30px white;
+    position: fixed;
+    top: 570px;
+    right: 290px;
+}
+
+.System1{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 10px white,
+                 0 0 20px white,
+                 0 0 30px white;
+    position: fixed;
+    top: 525px;
+    right: 225px;
+}
+
+.MEM1{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 10px white,
+                 0 0 20px white,
+                 0 0 30px white;
+    position: fixed;
+    top: 600px;
     right: 180px;
+}
+
+.TitleC{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    top: 40px;
+    position: fixed;
+    text-shadow: 2px 2px 5px white;
 }
 
 .Gmail{
@@ -1150,30 +1170,194 @@ html{
         left: 25vw;
     }
     
-    #Achievement{
-        display: none;
+    .Title{
+        font-size: 5vw;
+        text-align: center;
+        top: 385vw;
     }
 
-    #Skills{
-        display: none;
+    .NCII{
+        width: 50vw;
+        height: 50vw;
+        position: relative;
+        top: 327vw;
+        left: 0;
+        right: 0;
+    }
+    .NC{
+        font-size: 5vw;
+        text-align: center;
+        position: relative;
+        top: 330vw;
     }
 
-    #Project{
-        display: none;
+    .NC1{
+        font-size: 3vw;
+        text-align: center;
+        position: relative;
+        top: 332vw;
     }
 
-    #Contacts{
-        display: none;
+    .Skill{
+        font-size: 7vw;
+        text-align: center;
+        top: 270vw;
     }
-}
 
-#stars{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    .HTML{
+        width: 50vw;
+        height: 50vw;
+        position: fixed;
+        top: 285vw;
+        right: 0;
+        left: 25vw;
+    }
+
+    .CSS{
+        width: 50vw;
+        height: 50vw;
+        position: fixed;
+        top: 340vw;
+        right: 0;
+        left: 25vw;
+    }
+
+    .JavaScript{
+        width: 50vw;
+        height: 50vw;
+        position: fixed;
+        top: 395vw;
+        right: 0;
+        left: 25vw;
+    }
+
+    .Java{
+        width: 50vw;
+        height: 50vw;
+        position: fixed;
+        top: 450vw;
+        right: 0;
+        left: 25vw;
+    }
+
+    .TitleP{
+        font-size: 6vw;
+        text-align: center;
+        position: relative;
+        top: 270vw;
+    }
+
+    .MONI{
+        width: 50vw;
+        height: 50vw;
+        position: relative;
+        top: 280vw;
+        right: 0;
+        left: 0;
+    }
+
+    .System1{
+        font-size: 5vw;
+        text-align: center;
+        position: fixed;
+        width: 60vw;
+        top: 390vw;
+        left: 20vw;
+        right: 0;
+    }
+
+    .LABEL1{
+        font-size: 5vw;
+        text-align: center;
+        position: fixed;
+        width: 60vw;
+        top: 407vw;
+        left: 20vw;
+        right: 0;
+    }
+
+    .MEM1{
+        font-size: 5vw;
+        text-align: center;
+        position: fixed;
+        width: 70vw;
+        top: 413vw;
+        left: 15vw;
+        right: 0;
+    }
+
+    .ATM{
+        width: 50vw;
+        height: 50vw;
+        position: relative;
+        top: 330vw;
+        right: 0;
+        left: 0;
+    }
+
+    .System2{
+        font-size: 5vw;
+        text-align: center;
+        position: fixed;
+        width: 60vw;
+        top: 395vw;
+        left: 20vw;
+        right: 0;
+    }
+
+    .LABEL2{
+        font-size: 5vw;
+        text-align: center;
+        position: fixed;
+        width: 60vw;
+        top: 505vw;
+        left: 20vw;
+        right: 0;
+    }
+
+    .MEM2{
+        font-size: 5vw;
+        text-align: center;
+        position: fixed;
+        width: 70vw;
+        top: 512vw;
+        left: 15vw;
+        right: 0;
+    }
+
+    .TitleC{
+        font-size: 6vw;
+        text-align: center;
+        position: relative;
+        top: 310vw;
+    }
+
+    .Facebook{
+        width: 50vw;
+        height: 50vw;
+        position: relative;
+        top: 320vw;
+        right: 0;
+        left: 0;
+    }
+
+    .Github{
+        width: 50vw;
+        height: 50vw;
+        position: relative;
+        top: 325vw;
+        right: 0;
+        left: 0;
+    }
+
+    .Gmail{
+        width: 50vw;
+        height: 50vw;
+        position: relative;
+        top: 330vw;
+        right: 0;
+        left: 0;
+    }
 }
 
 .container{
@@ -1186,451 +1370,8 @@ html{
     padding: 20px;
 }
 
-.scroll-indicator{
-    position: absolute;
-    bottom: 120px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.content{
-    max-width: 700px;
-    animation: fadeIn 2s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: translateY(-65px);
-}
-
-.arrow{
-    color: #00ff66;
-    font-size: 40px;
-    line-height: 20px;
-    text-shadow: 0 0 10px #00ff66,  0 0 20px #00ff66,  0 0 40px #00ff66;
-    animation: glow 1.5s infinite alternate;
-}
-
-.arrow:nth-child(2){
-    animation-delay: 0.2s;
-}
-
-.arrow:nth-child(3){
-    animation-delay: 0.4s;
-}
-
-h1{
-    font-size: 35px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: 15px;
-    text-shadow: 0 0 15px white;
-}
-
-h2{
-    font-size: 28px;
-    margin-bottom: 50px;
-    color: #d9d9d9;
-    font-weight: normal;
-}
-
-p{
-    font-size: 18px;
-    line-height: 1.8;
-    color: #bfbfbf;
-    margin-bottom: 20px;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-.Education{
-    text-align: center;
-    color: white;
-    padding: 50px 20px;
-    background: transparent;
-}
-
-.Education h2{
-    font-size: 40px;
-    margin-bottom: 30px;
-}
-
-.Education .box{
-    width: 90%;
-    max-width: 700px;
-    margin: 0 auto 30px auto;
-    padding: 25px;
-    background: rgba(0, 0, 0, 0.4);
-    border: 3px solid #39ff14;
-    border-radius: 20px;
-    color: white;
-    box-shadow: 0 0 10px #39ff14,
-                0 0 20px #39ff14,
-                0 0 30px #39ff14;
-}
-
-.Education .box h3{
-    margin-bottom: 10px;
-    font-size: 24px;
-}
-
-.Education .box p{
-    font-size: 18px;
-    line-height: 1.6;
-}
-.about{
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.about-container{
-    width: 95%;
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 25px;
-    background: rgba(0, 0, 0, 0.7);
-    border: 2px solid #00ff00;
-    border-radius: 15px;
-    box-shadow: 0 0 15px #00ff00;
-}
-
-.about-container p{
-    text-align: justify;
-    line-height: 1.8;
-}
-
-.about-container h4{
-    margin-bottom: 30px;
-}
-
-.skills{
-    min-height: 100vh;
-    background: transparent;
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.skills-title{
-    font-size: clamp(35px, 8vw, 70px);
-    color: white;
-    margin-bottom: 50px;
-    text-shadow: 0 0 20px white;
-}
-
-.skills-card{
-    width: 100%;
-    max-width: 700px;
-    margin: 40px auto;
-    padding: 40px;
-    border: 2px solid #39ff14;
-    border-radius: 25px;
-    background: rgba(0, 0, 0, 0.6);
-    box-shadow: 0 0 15px rgba(255, 60, 60, 0.4);
-    transition: 0.4s ease;
-}
-
-.skills-card:hover{
-    transform: translateY(-5px);
-    box-shadow: 
-        0 0 20px #39ff14,
-        0 0 60px #39ff14,
-        0 0 80px #39ff14
-    ;
-}
-
-.skills-card img{
-    width: 200px;
-    height: auto;
-    margin-bottom: 15px;
-}
-
-.skills-card h2{
-    margin-top: 20px;
-    color: white;
-}
-
-.hobby{
-    min-height: 100vh;
-    background: transparent;
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.hobby-title{
-    font-size: clamp(35px, 8vw, 70px);
-    color: white;
-    margin-bottom: 50px;
-    text-shadow: 0 0 20px white;
-}
-
-.hobby-card{
-    width: 100%;
-    max-width: 700px;
-    margin: 40px auto;
-    padding: 40px;
-    border: 2px solid #39ff14;
-    border-radius: 25px;
-    background: rgba(0, 0, 0, 0.6);
-    box-shadow: 0 0 15px rgba(255, 60, 60, 0.4);
-    transition: 0.4s ease;
-}
-
-.hobby-card:hover{
-    transform: translateY(-5px);
-    box-shadow: 
-        0 0 20px #39ff14,
-        0 0 60px #39ff14,
-        0 0 80px #39ff14
-    ;
-}
-
-.hobby-card img{
-    width: 200px;
-    height: auto;
-    margin-bottom: 15px;
-}
-
-.hobby-card h2{
-    margin-top: 20px;
-    color: white;
-}
-
-.Certificates{
-    min-height: 100vh;
-    padding: 100px 20px;
-    text-align: center;
-    background: transparent;
-}
-
-.Certificates h1{
-    font-size: clamp(35px, 8vw, 70px);
-    color: #d8b44a;
-    margin-bottom: 50px;
-    text-shadow: 0 0 20px #d8b44a;
-}
-
-.Certificates p{
-    color: #d0d0d0;
-    margin-bottom: 5px;
-}
-
-.Certificates h3{
-    margin-top: 0;
-    margin-bottom: 50px;
-}
-
-.cert-card{
-    width: 100%;
-    max-width: 700px;
-    margin: auto;
-    padding: 0;
-    text-align: left;
-    border: 2px solid #d8b44a;
-    background: rgba(40, 0, 0, 0.8);
-    box-shadow: 0 0 15px rgba(216, 180, 74, .4), 0 0 30px rgba(216, 180, 74, .2);
-    position: relative;
-    overflow: hidden;
-    height: 100px;
-}
-
-.proj-card{
-    width: 700px;
-    max-width: 90%;
-    margin: auto;
-    padding: 5px;
-    text-align: left;
-    border: 2px solid #d8b44a;
-    background: rgba(40, 0, 0, 0.8);
-    box-shadow: 0 0 15px rgba(216, 180, 74, .4), 0 0 30px rgba(216, 180, 74, .2);
-    position: relative;
-    overflow: hidden;
-    height: 100px;
-}
-
-.cert-card img{
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit:  cover;
-    animation : scrollCert 12s ease-in-out infinite alternate;
-    position: relative
-}
-
-.proj-card img{
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit:  cover;
-    animation : scrollCerts 12s ease-in-out infinite alternate;
-    position: relative
-}
-
-.year{
-    color: #d8b44a;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.cert-card h2{
-    color: white;
-    margin-bottom: 20px;
-}
-
-.cert-card h3{
-    color: #ff5a5a;
-    margin-top: 20px;
-}
-
-.socials{
-    min-height: 100vh;
-    text-align: center;
-    padding: 100px 20px;
-    background: transparent;
-}
-
-.socials h1{
-    font-size: 60px;
-    color: #39ff14;
-    text-shadow: 0 0 20px #39ff14;
-}
-
-.socials p{
-    color: #ccc;
-    margin-bottom: 50px;
-}
-
-.social-con{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.social-card{
-    width: 180px;
-    padding: 25px;
-    text-decoration: none;
-    color: white;
-    border: 2px solid #39ff14;
-    border-radius: 20px;
-    box-shadow: 0 0 10px #39ff14,
-                0 0 20px rgba(57, 255, 20, .5);
-    transition: .3s;
-}
-
-.social-card:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px #39ff14,
-                0 0 40px #39ff14;
-}
-
-.social-card img{
-    width: 70px;
-    margin-bottom: 15px;
-}
-
-.social-card span{
-    display: block;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.Prof{
-    width: 180px;
-    height: 180px;
-    margin: 20px auto;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 4px solid #39ff14;
-    box-shadow: 0 0 10px #39ff14,
-                0 0 20px #39ff14,
-                0 0 30px #39ff14;
-}
-
-.Prof img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.name{
-    font-size: clamp(35px, 8vw, 70px);
-    color: white;
-    margin-bottom: 50px;
-    text-shadow: 0 0 20px white;
-}
-
 section{
     transform: translateY(1px);
    
-}
-
-.cert-card{
-
-}
-
-@keyframes glow{
-    from{
-        opacity: 0.5s;
-    }
-    to{
-        opacity: 1;
-    }
-}
-
-@keyframes fadein{
-    from{
-        opacity: 0;
-        transform: translateY(35px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY();
-    }
-}
-
-@keyframes scrollCert{
-    from{
-        transform: translateY(0%);
-    }
-    to{
-        transform: translateY(-50%);
-    }
-}
-
-@keyframes scrollCerts{
-    from{
-        transform: translateY(0%);
-    }
-    to{
-        transform: translateY(-50%);
-    }
-}
-
-@media (max-width: 768px){
-    h1{
-        font-size: 45px;
-    }
-    h2{
-        font-size: 22px;
-    }
-    p{
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 768px){
-    .cert-card{
-        width: 90%;
-        height: 180px;
-    }
-    .cert-card img{
-        animation: none;
-    }
-    .proj-card img{
-        animation: none;
-    }
 }
 
