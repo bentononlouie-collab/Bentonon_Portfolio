@@ -6,1372 +6,1419 @@
 }
 
 body{
-    background: #08005d;
+    background: #000000;
+    background-clip: blur(10px);
     overflow-x: hidden;
     height: 100vh;
     margin: 0;
-    color: white;
+    padding-top: 60px;
 }
 
 html{
     scroll-behavior: smooth;
 }
 
-.container{
+.Navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     display: flex;
-    flex-direction: column;
-}
-
-.Icon{
-    width: 70px;
-    height: 70px;
-    border: 2px solid white;
-    border-radius: 50%;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-shrink: 0;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    z-index: 99999;
 }
 
-.Icon img{
-    width: 150%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.Contact{
-    color: white;
-    font-size: 15px;
-    position: absolute;
-    top: 42px;
-    right: 95px;
-    padding: 8px 12px;
-    border-radius: 8px;
-    margin: 0;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-
-.Contact:hover{
-    color: cyan;
-    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
-    background-color: rgba(128, 128, 128, 0.5);
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-}
-
-.Projects{
-    color: white;
-    font-size: 15px;
-    position: absolute;
-    top: 42px;
-    right: 170px;
-    padding: 8px 12px;
-    border-radius: 8px;
-    margin: 0;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-
-.Projects:hover{
-    color: cyan;
-    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
-    background-color: rgba(128, 128, 128, 0.5);
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-}
-
-.Skills{
-    color: white;
-    font-size: 15px;
-    position: absolute;
-    top: 42px;
-    right: 250px;
-    padding: 8px 12px;
-    border-radius: 8px;
-    margin: 0;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-
-.Skills:hover{
-    color: cyan;
-    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
-    background-color: rgba(128, 128, 128, 0.5);
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-}
-
-.Achievement{
-    color: white;
-    font-size: 15px;
-    position: absolute;
-    top: 42px;
-    right: 310px;
-    padding: 8px 12px;
-    border-radius: 8px;
-    margin: 0;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-
-.Achievement:hover{
-    color: cyan;
-    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
-    background-color: rgba(128, 128, 128, 0.5);
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-}
-
-.About{
-    color: white;
-    font-size: 15px;
-    position: absolute;
-    top: 42px;
-    right: 425px;
-    padding: 8px 12px;
-    border-radius: 8px;
-    margin: 0;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-
-.About:hover{
-    color: cyan;
-    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
-    background-color: rgba(128, 128, 128, 0.5);
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-}
-
-.home-icon{
+.NavLinks{
     position: fixed;
-    top: 38px;
-    left: 20px;
-    z-index: 1000;
+    z-index: 99999;
 }
 
-.home-icon img{
-    width: 35px;
-    height: 35px;
-    filter: brightness(0) invert(1);
-}
-
-.Int h3{
-    font-size: 50px;
-    color: white;
-    text-shadow: 0 0 10px white, 0 0 20px white;
-    top: 150px;
-    left: 80px;
-    position: fixed;
-}
-
-.Fname{
-    color: white;
-    top: 250px;
-    left: 160px;
-    position: fixed;
-    text-shadow: 0 0 15px white, 0 0 30px white;
-    font-size: 80px;
-}
-
-.Sname{
-    color: white;
-    top: 340px;
-    left: 160px;
-    position: fixed;
-    text-shadow: 0 0 15px white, 0 0 30px white;
-    font-size: 80px;
-}
-
-.Course{
-    color: white;
-    top: 450px;
-    left: 120px;
-    position: fixed;
-    text-shadow: 0 0 15px white, 0 0 30px white;
+.Logo{
     font-size: 40px;
-}
-
-.Dec{
-    top: 500px;
-    left: 120px;
+    font-weight: bolder;
+    font-style: italic;
+    background: linear-gradient(to bottom, #999DA0, #123456);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     position: fixed;
-    color: white;
-    font-size: 20px;
+    left: 15px;
+    top: 20px;
+    cursor: default;
 }
 
-.btn{
-    position: absolute;
-    bottom: 40px;
-    left: 150px;
-    transform: translateX(-50%);
-    display: inline-block;
+.Homes{
+    background: linear-gradient(to right, white, #999999);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    right: 520px;
+    top: 20px;
+    position: fixed;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.Homes:hover{
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+    background-color: rgba(128, 128, 128, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.Abouts{
+    background: linear-gradient(to right, white, #999999);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    right: 430px;
+    top: 20px;
+    position: fixed;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.Abouts:hover{
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+    background-color: rgba(128, 128, 128, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.Achievements{
+    background: linear-gradient(to right, white, #999999);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    right: 275px;
+    top: 20px;
+    position: fixed;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.Achievements:hover{
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+    background-color: rgba(128, 128, 128, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.Project{
+    background: linear-gradient(to right, white, #999999);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    right: 160px;
+    top: 20px;
+    position: fixed;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.Project:hover{
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+    background-color: rgba(128, 128, 128, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.Contacts{
+    background: linear-gradient(to right, white, #999999);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    right: 50px;
+    top: 20px;
+    position: fixed;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.Contacts:hover{
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+    background-color: rgba(128, 128, 128, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.HomeContainer{
+    background: linear-gradient(to bottom, #000000, #151B54);
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.Greetings{
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    background: linear-gradient(to right, #777B7E, #1565BD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: fixed;
+    top: 80px;
+    left: 70px;
+    cursor: default;
+}
+
+.Fullname{
+    font-size: 100px;
+    font-weight: bold;
+    font-style: italic;
+    background: linear-gradient(to right, #9966CC, #B0E0E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: fixed;
+    left: 50px;
+    top: 160px;
+    width: 700px;
+    cursor: default;
+}
+
+.MOTO{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    background: linear-gradient(to right, #FFFFFF, #999999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: fixed;
+    left: 40px;
+    top: 390px;
+    width: 500px;
+    cursor: default;
+}
+
+.Description{
+    font-size: 20px;
+    font-style: oblique;
+    color: white;
+    position: fixed;
+    left: 70px;
+    top: 480px;
+    width: 450px;
+    cursor: default;
+}
+
+.DownloadCV{
     padding: 14px 35px;
-    border: 2px solid white;
-    border-radius: 30px;
-    text-decoration: none;
+    border: 2px solid #3B82F6;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
     color: white;
     font-size: 18px;
-    transition: 0.4s ease;
-    box-shadow: 0 0 15px #00ff66;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+    position: fixed;
+    left: 70px;
+    bottom: 100px;
 }
 
-.btn:hover{
+.DownloadCV:hover{
+    background: #3B82F6;
+    color: white;
+    box-shadow:  0 0 25px rgba(59, 130, 246, 0.8);
+    transform: translateY(-3px);
+}
+
+.ID{
+    width: 320px;
+    height: 450px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    color: white;
+    position: fixed;
+    right: 150px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.ID::before{
+    content: "";
+    position: absolute;
+    width: 250%;
+    height: 250%;
+    background: linear-gradient(120deg, transparent 30%,
+                                rgba(255, 255, 255, 0.15) 45%,
+                                rgba(255, 255, 255, 0.4) 50%,
+                                rgba(255, 255, 255, 0.15) 55%,
+                                transparent 70%);
+    top: var(--y, -100%);
+    left: var(--x, -100%);
+    transform: translate(-50%, -50%), rotate(25deg);
+    pointer-events: none;
+    transition: 0.1s;
+}
+
+.IDPicture{
+    width: 250px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    color: white;
+    position: fixed;
+    right: 35px;
+    overflow: hidden;
+    display: flex;
+}
+
+.IDPicture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+.ID h1{
+    background: linear-gradient(to bottom, #0041C2, #151B54);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: oblique;
+    font-size: 40px;
+    font-weight: bold;
+    position: fixed;
+    top: 280px;
+    right: 140px;
+    box-shadow: 0 0 10px #151B54,
+                0 0 20px #151B54
+                0 0 30px #151B54;
+}
+
+.ID h3{
+    background: blue;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: oblique;
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    top: 330px;
+    right: 100px;
+    box-shadow: 0 0 10px #151B54,
+                0 0 20px #151B54
+                0 0 30px #151B54;
+}
+
+.Line{
+    width: 200px;
+    height: 5px;
+    background: lightblue;
+    position: fixed;
+    top: 355px;
+    right: 60px;
+    border-radius: 5px;
+}
+
+.ID h2{
     background: white;
-    color: black;
-    box-shadow: 0 0 25px white;
-}
-
-.Picture img{
-    width: 500px;
-    height: 500px;
-    border-radius: 15%;
-    border: 4px solid #01f5ed;
-    box-shadow: 0 0 10px #01f5ed,
-                0 0 20px #01f5ed,
-                0 0 30px #01f5ed;
-    right: 50px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: oblique;
+    font-size: 15px;
+    font-weight: bold;
     position: fixed;
-    top: 150px;
+    top: 370px;
+    right: 110px;
+    box-shadow: 0 0 10px #151B54,
+                0 0 20px #151B54
+                0 0 30px #151B54;
 }
 
-.mobile-menu{
-    display: none;
+.AboutContainer{
+    background: linear-gradient(to right, #121214 200px , #4682B4);
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
-.AContainer{
-    width: 500px;
-    height: 500px;
-    background: transparent;
-    border: 4px solid cyan;
-    border-radius: 15%;
-    box-shadow: 0, 0, 10px cyan,
-                0, 0, 20px cyan,
-                0, 0, 30px cyan;
+.AboutText{
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: bold;
+    color: #0172B0;
     position: fixed;
+    top: 100px;
     left: 40px;
 }
 
-.AContainer p{
+.AboutDec{
+    font-size: 20px;
+    font-style: oblique;
+    color: white;
+    position: fixed;
+    top: 180px;
+    left: 40px;
+    width: 350px;
     text-align: justify;
     line-height: 1.8;
-    width: 450px;
-    left: 60px;
-    position: fixed;
     text-indent: 40px;
+}
+
+.EducationalBackground{
+    width: 900px;
+    height: 300px;
+    border-radius: 15px;
+    background: rgba(0, 100, 255, 0.12);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 100px;
+    left: 500px;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 150, 255, 0.2);
+}
+
+.EducationalBackground h1{
+    font-size: 20px;
     font-weight: bold;
-    font-size: 1.8;
-    padding: 20px;
+    color: white;
+    position: fixed;
+    top: 10px;
+    left: 15px;
+}
+
+.Elem{
+    width: 200px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    position: fixed;
+    left: 30px;
+    top: 40px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.Elem:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00aaff,
+                0 0 40px #0088ff,
+                0 0 60px #0066ff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.Elem img{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    transition: 0.4s;
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.4);
+}
+
+.Elem:hover img{
+    transform: scale(1.05);
+}
+
+.Elem h1{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    width: 160px;
+    text-align: center;
+    margin-top: 140px;
+}
+
+.line{
+    width: 90%;
+    height: 2px;
+    background: cyan;
+    margin: 10px auto;
+    position: fixed;
+    top: 180px;
+    left: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px cyan,
+                0 0 20px cyan;
+}
+
+.Elem h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    width: 160px;
+    text-align: center;
+    position: fixed;
+    top: 220px;
+    left: 18px;
+}
+
+.Elem h2{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    width: 160px;
+    text-align: center;
+    position: fixed;
+    top: 200px;
+    left: 18px;
+}
+
+.JHS{
+    width: 200px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    position: fixed;
+    left: 240px;
+    top: 40px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.JHS:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00aaff,
+                0 0 40px #0088ff,
+                0 0 60px #0066ff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.JHS img{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    transition: 0.4s;
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.4);
+}
+
+.JHS:hover img{
+    transform: scale(1.05);
+}
+
+.JHS h1{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    width: 160px;
+    text-align: center;
+    margin-top: 140px;
+}
+
+.line{
+    width: 90%;
+    height: 2px;
+    background: cyan;
+    margin: 10px auto;
+    position: fixed;
+    top: 180px;
+    left: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px cyan,
+                0 0 20px cyan;
+}
+
+.JHS h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    width: 160px;
+    text-align: center;
+    position: fixed;
+    top: 220px;
+    left: 18px;
+}
+
+.JHS h2{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    width: 160px;
+    text-align: center;
+    position: fixed;
+    top: 200px;
+    left: 18px;
+}
+
+.SHS{
+    width: 200px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    position: fixed;
+    left: 450px;
+    top: 40px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.SHS:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00aaff,
+                0 0 40px #0088ff,
+                0 0 60px #0066ff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.SHS img{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    transition: 0.4s;
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.4);
+}
+
+.SHS:hover img{
+    transform: scale(1.05);
+}
+
+.SHS h1{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    width: 160px;
+    text-align: center;
+    margin-top: 140px;
+}
+
+.line{
+    width: 90%;
+    height: 2px;
+    background: cyan;
+    margin: 10px auto;
+    position: fixed;
+    top: 180px;
+    left: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px cyan,
+                0 0 20px cyan;
+}
+
+.SHS h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    width: 160px;
+    text-align: center;
+    position: fixed;
+    top: 220px;
+    left: 18px;
+}
+
+.SHS h2{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    width: 160px;
+    text-align: center;
+    position: fixed;
+    top: 200px;
+    left: 18px;
+}
+
+.Colleges{
+    width: 200px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+    transition: 0.3s ease;
+    border-radius: 15px;
+    position: fixed;
+    left: 660px;
+    top: 40px;
+}
+
+.Colleges:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00aaff,
+                0 0 40px #0088ff,
+                0 0 60px #0066ff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.Colleges img{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    transition: 0.4s;
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.4);
+}
+
+.Colleges:hover img{
+    transform: scale(1.05);
+}
+
+.Colleges h1{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    width: 160px;
+    text-align: center;
+    margin-top: 140px;
+}
+
+.line{
+    width: 90%;
+    height: 2px;
+    background: cyan;
+    margin: 10px auto;
+    position: fixed;
+    top: 180px;
+    left: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px cyan,
+                0 0 20px cyan;
+}
+
+.Colleges h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    width: 160px;
+    text-align: center;
+    position: fixed;
+    top: 220px;
+    left: 18px;
+}
+
+.Colleges h2{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    width: 160px;
+    text-align: center;
+    position: fixed;
+    top: 200px;
+    left: 18px;
+}
+
+.skill{
+    width: 440px;
+    height: 300px;
+    border-radius: 15px;
+    background: rgba(0, 100, 255, 0.12);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 410px;
+    left: 500px;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 150, 255, 0.2);
+}
+
+.skill h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: oblique;
+    position: fixed;
+    left: 175px;
+    top: 10px;
     color: white;
 }
 
-.AContainer h4{
-    margin-bottom: 30px;
-    margin-top: 30px;
-    font-weight: bold;
-}
-
-.AEducation{
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
+.html{
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    position: fixed;
     top: 60px;
-    right: 720px;
-    position: fixed;
-}
-
-.Elementary{
-    width: 200px;
-    height: 200px;
-    border: 4px solid cyan;
-    border-radius: 15%;
-    position: fixed;
-    top: 120px;
-    right: 710px;
-    box-shadow: 0 0 10px cyan,
-                0 0 20px cyan,
-                0 0 30px cyan;
-}
-
-.Elementary img{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    object-fit: cover;
-    border-radius: 25px;
-    display: block;
-}
-
-.OElementary{
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-    opacity: 1;
-    transition: .3s;
-    font-size: 25px;
-    text-shadow: 2px 2px 5px black ;
-}
-
-.JuniorHigh{
-    width: 200px;
-    height: 200px;
-    border: 4px solid cyan;
-    border-radius: 15%;
-    position: fixed;
-    top: 120px;
-    right: 480px;
-    box-shadow: 0 0 10px cyan,
-                0 0 20px cyan,
-                0 0 30px cyan;
-}
-
-.JuniorHigh img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 25px;
-}
-
-.OJunior{
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-    opacity: 1;
-    transition: .3s;
-    font-size: 25px;
-    text-shadow: 2px 2px 5px black ;
-}
-
-.SeniorHigh{
-    width: 200px;
-    height: 200px;
-    border: 4px solid cyan;
-    border-radius: 15%;
-    position: fixed;
-    top: 120px;
-    right: 250px;
-    box-shadow: 0 0 10px cyan,
-                0 0 20px cyan,
-                0 0 30px cyan;
-}
-
-.SeniorHigh img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 25px;
-}
-
-.OSenior{
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-    opacity: 1;
-    transition: .3s;
-    font-size: 25px;
-    text-shadow: 2px 2px 5px black ;
-}
-
-.College{
-    width: 200px;
-    height: 200px;
-    border: 4px solid cyan;
-    border-radius: 15%;
-    position: fixed;
-    top: 120px;
-    right: 20px;
-    box-shadow: 0 0 10px cyan,
-                0 0 20px cyan,
-                0 0 30px cyan;
-}
-
-.College img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 25px;
-}
-
-.OCollege{
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-    opacity: 1;
-    transition: .3s;
-    font-size: 25px;
-    text-shadow: 2px 2px 5px black ;
-}
-
-.AHobbies{
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    top: 400px;
-    right: 820px;
-    position: fixed;
-}
-
-.Sports{
-    width: 200px;
-    height: 200px;
-    border: 4px solid cyan;
-    border-radius: 15%;
-    position: fixed;
-    bottom: 80px;
-    right: 710px;
+    left: 90px;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 0 10px cyan,
-                0 0 20px cyan,
-                0 0 30px cyan;
 }
 
-.Sports img{
-    height: 100%;
+.html img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    display: block;
-    border-radius: 25px;
 }
 
-.OSports{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: transparent;
-    font-weight: bold;
-    opacity: 0;
-    transition: .3s;
-    font-size: 50px;
-    -webkit-text-stroke: 2px black;
-}
-
-.Sports:hover, .OSports{
-    opacity: 1;
-}
-
-.VideoGames{
-    width: 200px;
-    height: 200px;
-    border: 4px solid cyan;
-    border-radius: 15%;
+.css{
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
     position: fixed;
-    bottom: 80px;
-    right: 480px;
+    top: 60px;
+    left: 240px;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 0 10px cyan,
-                0 0 20px cyan,
-                0 0 30px cyan;
 }
 
-.VideoGames img{
-    height: 100%;
+.css img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 25px;
-    display: block;
 }
 
-.OVid{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: transparent;
-    font-weight: bold;
-    opacity: 1;
-    transition: .3s;
-    font-size: 50px;
-    -webkit-text-stroke: 2px white;
-}
-
-.Music{
-    width: 200px;
-    height: 200px;
-    border: 4px solid cyan;
-    border-radius: 15%;
+.js{
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
     position: fixed;
-    bottom: 80px;
-    right: 250px;
+    top: 190px;
+    left: 240px;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 0 10px cyan,
-                0 0 20px cyan,
-                0 0 30px cyan;
 }
 
-.Music img{
-    height: 100%;
+.js img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    display: block;
-    border-radius: 25px;
-    
 }
 
-.OMusic{
-    position: absolute;
-    top: 0;
-    left: 0;
+.java{
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 190px;
+    left: 90px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.java img{
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: transparent;
-    font-weight: bold;
-    opacity: 1;
-    transition: .3s;
-    font-size: 50px;
-    -webkit-text-stroke: 2px black;
+    object-fit: cover;
 }
 
-.Title{
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
-    top: 40px;
-    position: fixed;
-    text-shadow: 2px 2px 5px white;
-}
-
-.NCII{
-    width: 300px;
+.hobby{
+    width: 440px;
     height: 300px;
+    border-radius: 15px;
+    background: rgba(0, 100, 255, 0.12);
+    backdrop-filter: blur(10px);
     position: fixed;
-    border-radius: 15%;
-    box-shadow: 0 0 10px cyan,
-                0 0 20px cyan,
-                0 0 30px cyan;
-    display: flex;
-    overflow: hidden;
-    top: 200px;
-    right: 620px;
+    top: 410px;
+    left: 960px;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 150, 255, 0.2);
 }
 
-.NCII img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    border-radius: 25px;
-}
-
-.NC{
-    text-align: center;
+.hobby h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: oblique;
+    position: fixed;
+    left: 160px;
+    top: 10px;
     color: white;
-    font-size: 35px;
-    font-weight: bold;
+}
+
+.Basketball{
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
     position: fixed;
-    bottom: 150px;
-}
-
-.NC1{
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    position: fixed;
-    bottom: 120px;
-}
-
-.Skill{
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-    text-shadow: 0 0 10px white,
-                 0 0 20px white,
-                 0 0 30px white;
-    color: white;
-    top: 40px;
-    position: fixed;
-}
-
-.HTML{
-    width: 300px;
-    height: 300px;
-    border-radius: 15%;
-    box-shadow: 0 0 10px cyan,
-                0 0 20px cyan,
-                0 0 30px cyan;
-    position: fixed;
-    overflow: hidden;
-    top: 250px;
-    left: 100px;
-}
-
-.HTML img{
-    display: block;
-    object-fit: cover;
-    border-radius: 25px;
-    width: 100%;
-    height: 100%;
-}
-
-.OHTML{
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-    opacity: 1;
-    transition: .3s;
-    font-size: 25px;
-    text-shadow: 2px 2px 5px black ;
-}
-
-.CSS{
-    width: 300px;
-    height: 300px;
-    border-radius: 15%;
-    box-shadow: 0 0 10px cyan,
-                0 0 20px cyan,
-                0 0 30px cyan;
-    position: fixed;
-    overflow: hidden;
-    top: 250px;
-    left: 440px;
-}
-
-.CSS img{
-    display: block;
-    object-fit: cover;
-    border-radius: 25px;
-    width: 100%;
-    height: 100%;
-}
-
-.OCSS{
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-    opacity: 1;
-    transition: .3s;
-    font-size: 25px;
-    text-shadow: 2px 2px 5px black ;
-}
-
-.JavaScript{
-    width: 300px;
-    height: 300px;
-    border-radius: 15%;
-    box-shadow: 0 0 10px cyan,
-                0 0 20px cyan,
-                0 0 30px cyan;
-    position: fixed;
-    overflow: hidden;
-    top: 250px;
-    right: 440px;
-}
-
-.JavaScript img{
-    display: block;
-    object-fit: cover;
-    border-radius: 25px;
-    width: 100%;
-    height: 100%;
-}
-
-.JS{
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-    opacity: 1;
-    transition: .3s;
-    font-size: 25px;
-    text-shadow: 2px 2px 5px black ;
-}
-
-.Java{
-    width: 300px;
-    height: 300px;
-    border-radius: 15%;
-    box-shadow: 0 0 10px cyan,
-                0 0 20px cyan,
-                0 0 30px cyan;
-    position: fixed;
-    overflow: hidden;
-    top: 250px;
-    right: 100px;
-}
-
-.Java img{
-    display: block;
-    object-fit: cover;
-    border-radius: 25px;
-    width: 100%;
-    height: 100%;
-}
-
-.OJAVA{
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-    opacity: 1;
-    transition: .3s;
-    font-size: 25px;
-    text-shadow: 2px 2px 5px black ;
-}
-
-.TitleP{
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
-    top: 40px;
-    position: fixed;
-    text-shadow: 2px 2px 5px white;
-}
-
-.MONI{
-    width: 300px;
-    height: 300px;
-    position: fixed;
-    border-radius: 15%;
-    overflow: hidden;
-    top: 200px;
-    right: 200px;
-    box-shadow: 0 0 10px cyan,
-                0 0 20px cyan,
-                0 0 30px cyan;
-}
-
-.MONI img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.ATM{
-    width: 300px;
-    height: 300px;
-    position: fixed;
-    border-radius: 15%;
-    overflow: hidden;
-    top: 200px;
-    left: 200px;
-    box-shadow: 0 0 10px cyan,
-                0 0 20px cyan,
-                0 0 30px cyan;
-}
-
-.ATM img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.System2{
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 0 0 10px white,
-                 0 0 20px white,
-                 0 0 30px white;
-    margin-top: 350px;            
-    margin-right: 825px;
-}
-
-.MEM2{
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 0 0 10px white,
-                 0 0 20px white,
-                 0 0 30px white;
-    position: fixed;
-    top: 600px;
-    left: 210px;
-}
-
-.LABEL2{
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 0 0 10px white,
-                 0 0 20px white,
-                 0 0 30px white;
-    position: fixed;
-    top: 570px;
-    left: 290px;
-}
-
-.LABEL1{
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 0 0 10px white,
-                 0 0 20px white,
-                 0 0 30px white;
-    position: fixed;
-    top: 570px;
-    right: 290px;
-}
-
-.System1{
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 0 0 10px white,
-                 0 0 20px white,
-                 0 0 30px white;
-    position: fixed;
-    top: 525px;
-    right: 225px;
-}
-
-.MEM1{
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 0 0 10px white,
-                 0 0 20px white,
-                 0 0 30px white;
-    position: fixed;
-    top: 600px;
-    right: 180px;
-}
-
-.TitleC{
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
-    top: 40px;
-    position: fixed;
-    text-shadow: 2px 2px 5px white;
-}
-
-.Gmail{
-    width: 300px;
-    height: 300px;
-    border-radius: 15%;
-    box-shadow: 0 0 10px cyan,
-                0 0 20px cyan,
-                0 0 30px cyan;
-    position: fixed;
-    top: 250px;
-    right: 180px;
+    top: 60px;
+    left: 90px;
+    border-radius: 15px;
     overflow: hidden;
 }
 
-.Gmail img{
+.Basketball img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
-    border-radius: 25px;
 }
 
-.Facebook{
-    width: 300px;
-    height: 300px;
-    border-radius: 15%;
-    box-shadow: 0 0 10px cyan,
-                0 0 20px cyan,
-                0 0 30px cyan;
+.Takraw{
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
     position: fixed;
-    top: 250px;
-    left: 180px;
+    top: 60px;
+    left: 240px;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
-.Facebook img{
+.Takraw img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
-    border-radius: 25px;
 }
 
-.Github{
-    width: 300px;
-    height: 300px;
-    border-radius: 15%;
-    box-shadow: 0 0 10px cyan,
-                0 0 20px cyan,
-                0 0 30px cyan;
+.musics{
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
     position: fixed;
-    top: 250px;
+    top: 190px;
+    left: 240px;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
-.Github img{
+.musics img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
-    border-radius: 25px;
 }
 
-@media (max-width: 768px){
-    
-    .Icon{
-        width: 12vw;
-        height: 12vw;
-        top: 5vw;
-        right: 5vw;
-    }
-
-    .Contact, .Projects, .Skills, .Achievement, .About{
-        display: none;
-    }
-
-    .home-icon{
-        top: 5vw;
-        left: 5vw;
-    }
-
-    .Fname{
-        font-size: 10vw;
-        top: 40vw;
-        left: 10vw;
-    }
-
-    .Sname{
-        font-size: 10vw;
-        top: 50vw;
-        left: 10vw;
-    }
-
-    .Picture img{
-        width: 80vw;
-        height: 80vw;
-        top: 65vw;
-        left: 10vw;
-    }
-
-    .Int h3{
-        font-size: 10vw;
-        top: 25vw;
-        left: 5vw;
-    }
-
-    .Course{
-        font-size: 8vw;
-        top: 150vw;
-        left: 21vw;
-    }
-    
-    .Dec{
-        font-size: 4vw;
-        top: 160vw;
-        left: 24vw;
-        width: 50vw;
-        margin: auto;
-        text-align: center;
-    }
-
-    .btn{
-        top: 185vw;
-        left: 30vw;
-        width: 60vw;
-        height: 15vw;
-        text-align: center;
-    }
-
-    .container{
-        height: fit-content;
-        width: 100%; 
-        display: flex;
-        flex-direction: column;
-    }
-
-    .mobile-menu{
-        display: none;
-        position: fixed;
-        top: 15px;
-        right: 70px;
-        background: rgba(0,0,0,0.8);
-        padding: 15px;
-        border-radius: 10px;
-        z-index: 1000;
-    }
-
-    .mobile-menu.show{
-        display: block;
-    }
-
-    .mobile-menu a{
-        display: block;
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-    }
-    
-    .AContainer{
-        width: 90vw;
-        height: 140vw;
-        left: 5vw;
-        border-radius: 14vw;
-        top: 10vw;
-    }
-
-    .AContainer p{
-        width: 90vw;
-        height: 20vw;
-        text-align: justify;
-        left: 15vw;
-        position: static;
-        margin-top: 0;
-    }
-
-    .AContainer h4{
-        margin-top: 10w;
-        margin-bottom: 4vw;
-    }
-
-    .AEducation{
-        text-align: center;
-        font-size: 5vw;
-        position: relative;
-        top: 165vw;
-        right: 0;
-        left: 0;
-    }
-
-    .Elementary{
-        width: 50vw;
-        height: 50vw;
-        position: relative;
-        top: 170vw;
-        left: 0;
-        right: 0;
-    }
-
-    .JuniorHigh{
-        width: 50vw;
-        height: 50vw;
-        position: relative;
-        top: 175vw;
-        left: 0;
-        right: 0;
-    }
-
-    .SeniorHigh{
-        width: 50vw;
-        height: 50vw;
-        position: relative;
-        top: 180vw;
-        left: 0;
-        right: 0;
-    }
-
-    .College{
-        width: 50vw;
-        height: 50vw;
-        position: relative;
-        top: 185vw;
-        left: 0;
-        right: 0;
-    }
-
-    .AHobbies{
-        text-align: center;
-        font-size: 5vw;
-        position: relative;
-        top: 200vw;
-        right: 0;
-        left: 0;
-    }
-
-    .Sports{
-        width: 50vw;
-        height: 50vw;
-        position: fixed;
-        top: 410vw;
-        right: 0;
-        left: 25vw;
-    }
-
-    .VideoGames{
-        width: 50vw;
-        height: 50vw;
-        position: fixed;
-        top: 465vw;
-        right: 0;
-        left: 25vw;
-    }
-
-    .Music{
-        width: 50vw;
-        height: 50vw;
-        position: fixed;
-        top: 520vw;
-        right: 0;
-        left: 25vw;
-    }
-    
-    .Title{
-        font-size: 5vw;
-        text-align: center;
-        top: 385vw;
-    }
-
-    .NCII{
-        width: 50vw;
-        height: 50vw;
-        position: relative;
-        top: 327vw;
-        left: 0;
-        right: 0;
-    }
-    .NC{
-        font-size: 5vw;
-        text-align: center;
-        position: relative;
-        top: 330vw;
-    }
-
-    .NC1{
-        font-size: 3vw;
-        text-align: center;
-        position: relative;
-        top: 332vw;
-    }
-
-    .Skill{
-        font-size: 7vw;
-        text-align: center;
-        top: 270vw;
-    }
-
-    .HTML{
-        width: 50vw;
-        height: 50vw;
-        position: fixed;
-        top: 285vw;
-        right: 0;
-        left: 25vw;
-    }
-
-    .CSS{
-        width: 50vw;
-        height: 50vw;
-        position: fixed;
-        top: 340vw;
-        right: 0;
-        left: 25vw;
-    }
-
-    .JavaScript{
-        width: 50vw;
-        height: 50vw;
-        position: fixed;
-        top: 395vw;
-        right: 0;
-        left: 25vw;
-    }
-
-    .Java{
-        width: 50vw;
-        height: 50vw;
-        position: fixed;
-        top: 450vw;
-        right: 0;
-        left: 25vw;
-    }
-
-    .TitleP{
-        font-size: 6vw;
-        text-align: center;
-        position: relative;
-        top: 270vw;
-    }
-
-    .MONI{
-        width: 50vw;
-        height: 50vw;
-        position: relative;
-        top: 280vw;
-        right: 0;
-        left: 0;
-    }
-
-    .System1{
-        font-size: 5vw;
-        text-align: center;
-        position: fixed;
-        width: 60vw;
-        top: 390vw;
-        left: 20vw;
-        right: 0;
-    }
-
-    .LABEL1{
-        font-size: 5vw;
-        text-align: center;
-        position: fixed;
-        width: 60vw;
-        top: 407vw;
-        left: 20vw;
-        right: 0;
-    }
-
-    .MEM1{
-        font-size: 5vw;
-        text-align: center;
-        position: fixed;
-        width: 70vw;
-        top: 413vw;
-        left: 15vw;
-        right: 0;
-    }
-
-    .ATM{
-        width: 50vw;
-        height: 50vw;
-        position: relative;
-        top: 330vw;
-        right: 0;
-        left: 0;
-    }
-
-    .System2{
-        font-size: 5vw;
-        text-align: center;
-        position: fixed;
-        width: 60vw;
-        top: 395vw;
-        left: 20vw;
-        right: 0;
-    }
-
-    .LABEL2{
-        font-size: 5vw;
-        text-align: center;
-        position: fixed;
-        width: 60vw;
-        top: 505vw;
-        left: 20vw;
-        right: 0;
-    }
-
-    .MEM2{
-        font-size: 5vw;
-        text-align: center;
-        position: fixed;
-        width: 70vw;
-        top: 512vw;
-        left: 15vw;
-        right: 0;
-    }
-
-    .TitleC{
-        font-size: 6vw;
-        text-align: center;
-        position: relative;
-        top: 310vw;
-    }
-
-    .Facebook{
-        width: 50vw;
-        height: 50vw;
-        position: relative;
-        top: 320vw;
-        right: 0;
-        left: 0;
-    }
-
-    .Github{
-        width: 50vw;
-        height: 50vw;
-        position: relative;
-        top: 325vw;
-        right: 0;
-        left: 0;
-    }
-
-    .Gmail{
-        width: 50vw;
-        height: 50vw;
-        position: relative;
-        top: 330vw;
-        right: 0;
-        left: 0;
-    }
+.games{
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 190px;
+    left: 90px;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
-.container{
+.games img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.AchievementContainer{
+    background: linear-gradient(to bottom, #060606, #616569);
     width: 100%;
     height: 100vh;
+    flex-direction: column;
     display: flex;
-    justify-content: center;
+    padding: 20px;
     align-items: center;
     text-align: center;
+    justify-content: center;
+}
+
+.AchievementContainer h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    font-style: oblique;
+    color: white;
+    position: fixed;
+    top: 40px;
+}
+
+.AchievementContainer p{
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    color: white;
+    position: fixed;
+    top: 120px;
+    width: 500px;
+}
+
+.NCIIContainer{
+    width: 200px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+    transition: 0.3s ease;
+    border-radius: 15px;
+    position: fixed;
+}
+
+.NCIIContainer:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00aaff,
+                0 0 40px #0088ff,
+                0 0 60px #0066ff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.NCIIContainer img{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    transition: 0.4s;
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.4);
+}
+
+.NCIIContainer:hover img{
+    transform: scale(1.05);
+}
+
+.NCIIContainer h1{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    width: 160px;
+    position: fixed;
+    text-align: center;
+    margin-top: 120px;
+    margin-left: 15px;
+}
+
+.line{
+    width: 90%;
+    height: 2px;
+    background: cyan;
+    margin: 10px auto;
+    position: fixed;
+    top: 180px;
+    left: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px cyan,
+                0 0 20px cyan;
+}
+
+.NCIIContainer h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    width: 160px;
+    text-align: center;
+    position: fixed;
+    top: 220px;
+    left: 18px;
+}
+
+.NCIIContainer h2{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    width: 160px;
+    text-align: center;
+    position: fixed;
+    top: 200px;
+    left: 18px;
+}
+
+.ProjectContainer{
+    background: linear-gradient(to bottom, #0a0a0a, #483d8b);
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
     padding: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.ProjectContainer h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    font-style: oblique;
+    color: white;
+    position: fixed;
+    top: 40px;
+}
+
+.ProjectContainer p{
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    color: white;
+    position: fixed;
+    top: 120px;
+    width: 500px;
+}
+
+.Project-Filter{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+    position: fixed;
+    top: 140px;
+}
+
+.Project-Filter button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.Project-Filter button:hover{
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 15px #4b0082;
+
+}
+
+.moni{
+    width: 200px;
+    height: 300px;
+    position: fixed;
+    border-radius: 15px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    top: 250px;
+    left: 500px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.moni:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00aaff,
+                0 0 40px #0088ff,
+                0 0 60px #0066ff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.moni img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: 0.4s;
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.4);
+}
+
+.moni:hover img{
+    transform: scale(1.05);
+}
+
+.moni h1{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    width: 160px;
+    text-align: center;
+    margin-top: 120px;
+    margin-left: 15px;
+}
+
+.line1{
+    width: 90%;
+    height: 2px;
+    background: cyan;
+    margin: 10px auto;
+    position: fixed;
+    top: 190px;
+    left: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px cyan,
+                0 0 20px cyan;
+}
+
+.moni h3{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    width: 160px;
+    text-align: center;
+    position: fixed;
+    top: 240px;
+    left: 18px;
+}
+
+.moni h2{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    width: 160px;
+    text-align: center;
+    position: fixed;
+    top: 210px;
+    left: 18px;
+}
+
+.atm{
+    width: 200px;
+    height: 300px;
+    position: fixed;
+    border-radius: 15px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    top: 250px;
+    right: 500px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.atm:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00aaff,
+                0 0 40px #0088ff,
+                0 0 60px #0066ff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.atm img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: 0.4s;
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.4);
+}
+
+.atm:hover img{
+    transform: scale(1.05);
+}
+
+.atm h1{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    width: 160px;
+    text-align: center;
+    margin-top: 120px;
+    margin-left: 15px;
+}
+
+.line2{
+    width: 90%;
+    height: 2px;
+    background: cyan;
+    margin: 10px auto;
+    position: fixed;
+    top: 210px;
+    left: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px cyan,
+                0 0 20px cyan;
+}
+
+.atm h3{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    width: 160px;
+    text-align: center;
+    position: fixed;
+    top: 260px;
+    left: 18px;
+}
+
+.atm h2{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    width: 160px;
+    text-align: center;
+    position: fixed;
+    top: 230px;
+    left: 18px;
+}
+
+.ContactContainer{
+    background: radial-gradient(circle at center, rgba(0, 80, 255, 0.35) 0%, rgba(0, 30, 100, 0.2) 30%, rgba(0, 0, 0, 0) 70%), 
+                linear-gradient(to bottom, #000000, #020818, #03134a);
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.ContactContainer h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    background: linear-gradient(to right, white, #1565BD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: fixed;
+    top: 100px;
+    item-align: center;
+    cursor: default;
+}
+
+.ContactContainer p{
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    color: white;
+    position: fixed;
+    top: 160px;
+    width: 490px;
+}
+
+.form{
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    position: fixed;
+    top: 250px;
+    box-shadow: 0 0 20px rgba(0, 150, 255, 0.2);
+}
+
+.form h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: oblique;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    color: white;
+}
+
+.form p{
+    font-size: 15px;
+    font-weight: normal;
+    font-style: oblique;
+    position: fixed;
+    left: 15px;
+    top: 50px;
+    color: white;
+    width: 300px;
+    text-align: justify;
+}
+
+.FB{
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    position: fixed;
+    top: 120px;
+    left: 10px;
+    overflow: hidden;
+}
+
+.FB img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.form h2{
+    font-size: 15px;
+    font-weight: bold;
+    font-style: oblique;
+    position: fixed;
+    left: 22px;
+    top: 230px;
+    color: white;
+}
+
+.Git{
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    position: fixed;
+    top: 120px;
+    left: 120px;
+    overflow: hidden;
+}
+
+.Git img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form h3{
+    font-size: 15px;
+    font-weight: bold;
+    font-style: oblique;
+    position: fixed;
+    left: 145px;
+    top: 230px;
+    color: white;
+}
+
+.mail{
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    position: fixed;
+    top: 120px;
+    left: 230px;
+    overflow: hidden;
+}
+
+.mail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form h4{
+    font-size: 15px;
+    font-weight: bold;
+    font-style: oblique;
+    position: fixed;
+    left: 255px;
+    top: 230px;
+    color: white;
 }
 
 section{
     transform: translateY(1px);
-   
 }
 
