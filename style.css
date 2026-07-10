@@ -174,6 +174,20 @@ html{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
+.menu-btn{
+    display: none;
+    font-size: 30px;
+    color: white;
+    position: fixed;
+    top:20px;
+    right: 20px;
+    z-index: 999999;
+}
+
+.menu-btn{
+    pointer-events: auto;
+}
+
 .HomeContainer{
     background: linear-gradient(to bottom, #000000, #151B54);
     width: 100%;
@@ -1420,5 +1434,359 @@ html{
 
 section{
     transform: translateY(1px);
+}
+
+@media (max-width: 768px) {
+
+    .NavLinks{
+        display: none;
+    }
+    .HomeContainer{
+        height: 120vh;
+        position: absolute;
+    }
+
+    .Greetings{
+        font-size: 10vw;
+        position:absolute;
+        left: 5vw;
+        top: 10vw;
+    }
+
+    .ID{
+        position: absolute;
+        left: 7vw;
+        top: 25vw;
+    }
+
+    .ID h3{
+        position: absolute;
+        display: flex;
+    }
+
+    .Fullname{
+        font-size: 15vw;
+        width: 85vw;
+        position: absolute;
+        top: 150vw;
+        left: 7vw;
+    }
+
+    .MOTO{
+        position: absolute;
+        top: 185vw;
+        font-size: 5vw;
+        left: 2vw;
+        width: 95vw;
+    }
+
+    .Description{
+        font-size: 4vw;
+        position: absolute;
+        top: 200vw;
+        left: 1vw;
+        width: 95vw;
+    }
+
+    .DownloadCV{
+        position: absolute;
+        top: 220vw;
+        height: 14vw;
+        left: 1vw;
+    }
+
+    .AboutContainer{
+        position: absolute;
+        top: 240vw;
+        height: 645vw;
+    }
+
+    .AboutText{
+        position: absolute;
+        top: 10vw;
+        left: 25vw;
+        display: flex;
+    }
+
+    .AboutDec{
+        position: absolute;
+        top: 30vw;
+        left: 3.5vw;
+    }
+
+    .EducationalBackground{
+        position: absolute;
+        left: 5vw;
+        width: 90vw;
+        top: 170vw;
+        height: 300vw;
+    }
+
+    .EducationalBackground h1{
+        position: absolute;
+        left: 13vw;
+    }
+
+    .Elem{
+        position: absolute;
+        top: 15vw;
+        left: 18vw;
+    }
+
+    .Elem h3{
+        display: block;
+    }
+
+    .Elem h1{
+        position: absolute;
+        left: 5vw;
+    }
+
+    .JHS{
+        position: absolute;
+        top: 85vw;
+        left: 18vw;
+    }
+
+    .JHS h1{
+        position: absolute;
+        left: 5vw;
+    }
+
+    .JHS h3{
+        display: block;
+    }
+
+    .SHS{
+        position: absolute;
+        top: 155vw;
+        left: 18vw;
+    }
+
+    .SHS h1{
+        position: absolute;
+        left: 5vw;
+    }
+
+    .SHS h3{
+        display: block;
+    }
+
+    .Colleges{
+        position: absolute;
+        top: 225vw;
+        left: 18vw;
+    }
+
+    .Colleges h1{
+        position: absolute;
+        left: 5vw;
+    }
+
+    .Colleges h3{
+        display: block;
+    }
+
+    .skill{
+        position: absolute;
+        left: 5vw;
+        width: 90vw;
+        top: 475vw;
+    }
+
+    .skill h1{
+        position: absolute;
+        left: 35vw;
+    }
+
+    .html{
+        position: absolute;
+        left: 11vw;
+    }
+
+    .java{
+        position: absolute;
+        left: 11vw;
+    }
+
+    .css{
+        position: absolute;
+        left: 51vw;
+    }
+
+    .js{
+        position: absolute;
+        left: 51vw;
+    }
+
+    .hobby{
+        position: absolute;
+        left: 5vw;
+        width: 90vw;
+        top: 560vw;
+    }
+
+    .hobby h1{
+        position: absolute;
+        left: 30vw;
+    }
+
+    .Basketball{
+        position: absolute;
+        left: 11vw;
+    }
+
+    .games{
+        position: absolute;
+        left: 11vw;
+    }
+
+    .Takraw{
+        position: absolute;
+        left: 51vw;
+    }
+
+    .musics{
+        position: absolute;
+        left: 51vw;
+    }
+
+    .AchievementContainer{
+        position: absolute;
+        top: 882vw;
+    }
+
+    .AchievementContainer h1{
+        position: absolute;
+        font-size: 10vw;
+    }
+
+    .AchievementContainer p{
+        position: absolute;
+        top: 25vw;
+        width: 100vw;
+        font-size: 4vw;
+    }
+
+    .NCIIContainer h1{
+        position: absolute;
+        font-size: 4.5vw;
+        width: 50vw;
+        right: 1vw;
+    }
+
+    .NCIIContainer h3{
+        display: block;
+    }
+
+    .ProjectContainer{
+        position: absolute;
+        top: 1050vw;
+        height: 235vw;
+    }
+
+    .ProjectContainer h1{
+        position: absolute;
+        font-size: 10vw;
+    }
+
+    .ProjectContainer p{
+        position: absolute;
+        width: 100%;
+        top: 25vw;
+        font-size: 4vw;
+    }
+
+    .Project-Filter{
+        position: absolute;
+        width: 80%;
+        left: 8vw;
+        top: 30vw;
+    }
+
+    .moni{
+        position: absolute;
+        left: 20vw;
+        top: 60vw;
+    }
+
+    .moni h1{
+        font-size: 5vw;
+    }
+
+    .line1{
+        top: 53vw;
+    }
+
+    .moni h3{
+        display: block;
+    }
+
+    .atm{
+        position: absolute;
+        left: 20vw;
+        top: 150vw;
+    }
+
+    .atm h1{
+        font-size: 5vw;
+    }
+
+    .line2{
+        top: 58vw;
+    }
+
+    .atm h3{
+        display: block;
+    }
+
+    .ContactContainer{
+        position: absolute;
+        top: 642vh;
+    }
+
+    .ContactContainer h1{
+        position: absolute;
+        font-size: 10vw;
+        top: 7vw;
+        left: 20vw;
+    }
+
+    .ContactContainer p{
+        position: absolute;
+        width: 100%;
+        font-size: 4vw;
+        top: 20vw;
+    }
+
+    .ContactContainer h2, h3, h4{
+        display: none;
+    }
+
+    .form{
+        position: absolute;
+        width: 100%;
+    }
+
+    .form p{
+        width: 90vw;
+    }
+
+    .FB{
+        position: absolute;
+        top: 40vw;
+    }
+
+    .Git{
+        position: absolute;
+        top: 40vw;
+        left: 37vw;
+    }
+
+    .mail{
+        position: absolute;
+        top: 40vw;
+        left: 70vw;
+    }
 }
 

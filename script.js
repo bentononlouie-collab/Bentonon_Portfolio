@@ -12,6 +12,9 @@ card.addEventListener("mouseleave", () => {
     card.style.setProperty("--y", "-100%");
 });
 
+function toggleMenu(){
+    document.querySelector(".NavLinks").classList.toggle("active");
+}
 
     function filterProjects(category) {
         let projects = document.querySelectorAll('.moni, .atm');
