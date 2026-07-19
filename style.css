@@ -64,6 +64,7 @@ html{
     margin: 0;
     transition: 0.3s ease;
     cursor: pointer;
+    display: inline-block;
 }
 
 .Homes:hover{
@@ -72,6 +73,10 @@ html{
     background-color: rgba(128, 128, 128, 0.5);
     transform: translateY(-5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.Homes.active{
+    border-bottom: 3px solid cyan;
 }
 
 .Abouts{
@@ -99,6 +104,10 @@ html{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
+.Abouts.active{
+    border-bottom: 3px solid cyan;
+}
+
 .Achievements{
     background: linear-gradient(to right, white, #999999);
     font-size: 20px;
@@ -122,6 +131,10 @@ html{
     background-color: rgba(128, 128, 128, 0.5);
     transform: translateY(-5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.Achievements.active{
+    border-bottom: 3px solid cyan;
 }
 
 .Project{
@@ -149,6 +162,10 @@ html{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
+.Project.active{
+    border-bottom: 3px solid cyan;
+}
+
 .Contacts{
     background: linear-gradient(to right, white, #999999);
     font-size: 20px;
@@ -172,6 +189,10 @@ html{
     background-color: rgba(128, 128, 128, 0.5);
     transform: translateY(-5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.Contacts.active{
+    border-bottom: 3px solid cyan;
 }
 
 .menu-btn{
