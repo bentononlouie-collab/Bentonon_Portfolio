@@ -51,3 +51,21 @@ window.addEventListener("scroll", () => {
                 }
             });
     });
+
+    const fadeElements = document.querySelectorAll(".HomeContainer, .AboutContainer, .AchievementContainer, .ProjectContainer, .ContactContainer");
+    const fadeObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }else{
+                entry.target.classList.remove("show");
+            }
+        });
+    }, { 
+        threshold: 0.15 
+    });
+
+    fadeElements.forEach(element => {
+        element.classList.add("Fade-in");
+        fadeObserver.observe(element);
+    });
